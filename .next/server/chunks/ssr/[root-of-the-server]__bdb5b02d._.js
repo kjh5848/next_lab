@@ -143,23 +143,23 @@ async function HomePage() {
                             children: movie.title
                         }, void 0, false, {
                             fileName: "[project]/app/(home)/page.tsx",
-                            lineNumber: 24,
-                            columnNumber: 21
+                            lineNumber: 25,
+                            columnNumber: 17
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/(home)/page.tsx",
-                        lineNumber: 23,
-                        columnNumber: 21
+                        lineNumber: 24,
+                        columnNumber: 17
                     }, this)
                 }, movie.id, false, {
                     fileName: "[project]/app/(home)/page.tsx",
-                    lineNumber: 22,
-                    columnNumber: 17
+                    lineNumber: 23,
+                    columnNumber: 13
                 }, this))
         }, void 0, false, {
             fileName: "[project]/app/(home)/page.tsx",
             lineNumber: 21,
-            columnNumber: 13
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/(home)/page.tsx",

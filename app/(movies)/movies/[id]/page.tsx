@@ -1,17 +1,17 @@
-import axios from "axios";
-import { API_URL } from "../../../(home)/page";
+import { Suspense } from "react";
+import MovieInfo from "../../../../components/movie-info";
+import MovieVideos from "../../../../components/movie-video";
 
-async function getMovie(id:string) {
-  const res = await axios.get(`${API_URL}/${id}`)
-  return res.data
- 
+export default async function Page({ params }: { params: { id: string } }) {
+  const { id } = await params;//next 15버전 부터는 await를 써줘야 함.
+  return (
+    <div className="container mx-auto p-4">
+      <Suspense fallback={<h1 className="text-2xl">Loading movie info...</h1>}>
+        <MovieInfo id={id} />
+      </Suspense>
+      <Suspense fallback={<h1 className="text-2xl">Loading movie videos...</h1>}>
+        <MovieVideos id={id} />
+      </Suspense>
+    </div>
+  );
 }
-
-export default function Page({
-  params 
-  }: {
-  params: { id: string }
-  }) {
-    return <div>Movie {params.id}</div>
-}
-  
