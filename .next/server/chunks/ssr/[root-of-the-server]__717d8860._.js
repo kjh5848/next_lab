@@ -546,6 +546,24 @@ async function MovieInfo({ id }) {
     }, void 0, true);
 }
 }}),
+"[project]/styles/movie-videos.module.css [app-rsc] (css module)": ((__turbopack_context__) => {
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.v({
+  "container": "movie-videos-module__-fEI0G__container",
+  "featuredVideo": "movie-videos-module__-fEI0G__featuredVideo",
+  "noVideos": "movie-videos-module__-fEI0G__noVideos",
+  "publishDate": "movie-videos-module__-fEI0G__publishDate",
+  "sectionTitle": "movie-videos-module__-fEI0G__sectionTitle",
+  "title": "movie-videos-module__-fEI0G__title",
+  "videoCard": "movie-videos-module__-fEI0G__videoCard",
+  "videoGrid": "movie-videos-module__-fEI0G__videoGrid",
+  "videoSection": "movie-videos-module__-fEI0G__videoSection",
+  "videoTitle": "movie-videos-module__-fEI0G__videoTitle",
+  "videoWrapper": "movie-videos-module__-fEI0G__videoWrapper",
+});
+}}),
 "[project]/components/movie-video.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -556,11 +574,7 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f28$home$292f$page$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/(home)/page.tsx [app-rsc] (ecmascript)");
-(()=>{
-    const e = new Error("Cannot find module '../styles/movie-videos.module.css'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
+var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/styles/movie-videos.module.css [app-rsc] (css module)");
 ;
 ;
 ;
@@ -581,10 +595,10 @@ async function MovieVideos({ id }) {
     // 비디오가 없는 경우 처리
     if (!videos || videos.length === 0) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: styles.container,
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].container,
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: styles.title,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].title,
                     children: "Videos"
                 }, void 0, false, {
                     fileName: "[project]/components/movie-video.tsx",
@@ -592,7 +606,7 @@ async function MovieVideos({ id }) {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: styles.noVideos,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].noVideos,
                     children: "No videos available for this movie."
                 }, void 0, false, {
                     fileName: "[project]/components/movie-video.tsx",
@@ -629,10 +643,10 @@ async function MovieVideos({ id }) {
         return new Date(b.published_at).getTime() - new Date(a.published_at).getTime();
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: styles.container,
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].container,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                className: styles.title,
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].title,
                 children: "Videos"
             }, void 0, false, {
                 fileName: "[project]/components/movie-video.tsx",
@@ -643,10 +657,10 @@ async function MovieVideos({ id }) {
                 const videosOfType = groupedVideos[type];
                 if (!videosOfType || videosOfType.length === 0) return null;
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: styles.videoSection,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].videoSection,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                            className: styles.sectionTitle,
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].sectionTitle,
                             children: [
                                 type,
                                 "s"
@@ -657,7 +671,7 @@ async function MovieVideos({ id }) {
                             columnNumber: 13
                         }, this),
                         type === "Trailer" && videosOfType.sort(sortByDate)[0] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: styles.featuredVideo,
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].featuredVideo,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
                                     width: "100%",
@@ -673,7 +687,7 @@ async function MovieVideos({ id }) {
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                    className: styles.videoTitle,
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].videoTitle,
                                     children: videosOfType[0].name
                                 }, void 0, false, {
                                     fileName: "[project]/components/movie-video.tsx",
@@ -681,7 +695,7 @@ async function MovieVideos({ id }) {
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: styles.publishDate,
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].publishDate,
                                     children: new Date(videosOfType[0].published_at).toLocaleDateString("ko-KR", {
                                         year: "numeric",
                                         month: "long",
@@ -699,13 +713,13 @@ async function MovieVideos({ id }) {
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: styles.videoGrid,
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].videoGrid,
                             children: videosOfType.sort(sortByDate)// 트레일러의 경우 첫 번째는 이미 크게 표시했으므로 두 번째부터
                             .slice(type === "Trailer" ? 1 : 0).map((video)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: styles.videoCard,
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].videoCard,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: styles.videoWrapper,
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].videoWrapper,
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
                                                 width: "100%",
                                                 height: "100%",
@@ -725,7 +739,7 @@ async function MovieVideos({ id }) {
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                            className: styles.videoTitle,
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].videoTitle,
                                             children: video.name
                                         }, void 0, false, {
                                             fileName: "[project]/components/movie-video.tsx",
@@ -733,7 +747,7 @@ async function MovieVideos({ id }) {
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: styles.publishDate,
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].publishDate,
                                             children: new Date(video.published_at).toLocaleDateString("ko-KR", {
                                                 year: "numeric",
                                                 month: "long",
@@ -850,4 +864,4 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/app/(movies)/movies/[
 
 };
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__5f1259aa._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__717d8860._.js.map

@@ -171,4 +171,120 @@
 }
 
 
-/*# sourceMappingURL=styles_b219a241._.css.map*/
+/* [project]/styles/movie-videos.module.css [app-client] (css) */
+.movie-videos-module__-fEI0G__container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.movie-videos-module__-fEI0G__title {
+  border-bottom: 1px solid #ffffff1a;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.movie-videos-module__-fEI0G__noVideos {
+  color: #999;
+  font-style: italic;
+}
+
+.movie-videos-module__-fEI0G__videoSection {
+  margin-bottom: 40px;
+}
+
+.movie-videos-module__-fEI0G__sectionTitle {
+  color: #ddd;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.movie-videos-module__-fEI0G__featuredVideo {
+  background-color: #0003;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  overflow: hidden;
+}
+
+.movie-videos-module__-fEI0G__featuredVideo iframe {
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 10px 30px #0000004d;
+}
+
+.movie-videos-module__-fEI0G__videoGrid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  display: grid;
+}
+
+.movie-videos-module__-fEI0G__videoCard {
+  background-color: #0003;
+  border-radius: 12px;
+  transition: transform .3s, box-shadow .3s;
+  overflow: hidden;
+}
+
+.movie-videos-module__-fEI0G__videoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px #0006;
+}
+
+.movie-videos-module__-fEI0G__videoWrapper {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-videos-module__-fEI0G__videoWrapper iframe {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.movie-videos-module__-fEI0G__videoTitle {
+  margin: 12px 16px 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.movie-videos-module__-fEI0G__publishDate {
+  color: #999;
+  margin: 0 16px 16px;
+  font-size: 12px;
+}
+
+@media (width <= 1024px) {
+  .movie-videos-module__-fEI0G__container {
+    width: 90%;
+  }
+
+  .movie-videos-module__-fEI0G__videoGrid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (width <= 768px) {
+  .movie-videos-module__-fEI0G__container {
+    width: 95%;
+  }
+
+  .movie-videos-module__-fEI0G__videoGrid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+
+  .movie-videos-module__-fEI0G__featuredVideo iframe {
+    height: 300px;
+  }
+}
+
+
+/*# sourceMappingURL=styles_6c9c0f28._.css.map*/
