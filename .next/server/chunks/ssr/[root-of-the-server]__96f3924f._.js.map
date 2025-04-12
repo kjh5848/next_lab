@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/kjh58/%EB%AC%B8%EC%84%9C/GitHub/next_lab/components/navigation.tsx"],"sourcesContent":["\"use client\"\r\n\r\nimport Link from \"next/link\";\r\nimport { usePathname } from \"next/navigation\";\r\n\r\nexport default function Navigation() {\r\n    const path = usePathname()\r\n\r\n    return (\r\n        <ul>\r\n            <Link href=\"/\"><li>Home{path === \"/\" ? \"😊\" : \"\"}</li></Link>\r\n            <Link href=\"/about-us\"><li>About{path === \"/about-us\" ? \"😊\" : \"\"}</li></Link>\r\n            <Link href=\"/login\"><li>login{path === \"/login\" ? \"😊\" : \"\"}</li></Link>\r\n        </ul>\r\n    )\r\n}"],"names":[],"mappings":";;;;AAEA;AACA;AAHA;;;;AAKe,SAAS;IACpB,MAAM,OAAO,CAAA,GAAA,kIAAA,CAAA,cAAW,AAAD;IAEvB,qBACI,8OAAC;;0BACG,8OAAC,4JAAA,CAAA,UAAI;gBAAC,MAAK;0BAAI,cAAA,8OAAC;;wBAAG;wBAAK,SAAS,MAAM,OAAO;;;;;;;;;;;;0BAC9C,8OAAC,4JAAA,CAAA,UAAI;gBAAC,MAAK;0BAAY,cAAA,8OAAC;;wBAAG;wBAAM,SAAS,cAAc,OAAO;;;;;;;;;;;;0BAC/D,8OAAC,4JAAA,CAAA,UAAI;gBAAC,MAAK;0BAAS,cAAA,8OAAC;;wBAAG;wBAAM,SAAS,WAAW,OAAO;;;;;;;;;;;;;;;;;;AAGrE","debugId":null}}]
+}
