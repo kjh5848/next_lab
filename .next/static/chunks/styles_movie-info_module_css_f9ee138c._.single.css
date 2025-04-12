@@ -1,0 +1,29 @@
+/* [project]/styles/movie-info.module.css [app-client] (css) */
+.movie-info-module__xv9QNq__container {
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+}
+
+.movie-info-module__xv9QNq__poster {
+  border-radius: 20px;
+  place-self: center;
+  max-width: 80%;
+}
+
+.movie-info-module__xv9QNq__title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.movie-info-module__xv9QNq__info {
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  display: flex;
+}
+
+/*# sourceMappingURL=styles_movie-info_module_css_f9ee138c._.single.css.map*/

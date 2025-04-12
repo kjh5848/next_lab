@@ -1,4 +1,7 @@
+import ErrorDisplay from "../components/ErrorDisplay"
 import Navigation from "../components/navigation"
+import { ErrorProvider } from "./contexts/ErrorContext"
+import "../styles/global.css"
 
 export const metadata = {
   title: {
@@ -18,6 +21,7 @@ export default function RootLayout({
       <body>
         <Navigation />
         {children}
+
         </body>
     </html>
   )

@@ -1,10 +1,14 @@
 import axios from "axios";
 import { API_URL } from "../app/(home)/page";
 import { unstable_cache } from "next/cache";
+import styles from "../styles/movie-info.module.css"
+
 const getMovie = async (id: string) => {
   const res = await fetch(`${API_URL}/${id}`, { cache: "force-cache" });
   return res.json();
 };
+//fetch를 권장
+
 
 // // Next.js 15에서는 `unstable_cache`가 안정화되어 사용 가능합니다
 // const getMovie = unstable_cache(
@@ -24,13 +28,13 @@ const getMovie = async (id: string) => {
 export default async function MovieInfo({ id }: { id: string }) {
   const movie = await getMovie(id);
   return (
-    <div className="w-full">
-      <h1 className="text-3xl font-bold">{movie.title}</h1>
-      <img className="w-64" src={movie.medium_cover_image} alt={movie.title} />
-      <p>{movie.description_full}</p>
-      <div>
-        <span>Rating: {movie.rating}</span>
-        <span>Runtime: {movie.runtime}</span>
+    <div className={styles.container}>
+      <img className={styles.poster} src={movie.poster_path} alt={movie.title} />
+      <div className={styles.info}>
+        <h1 className={styles.title}>{movie.title}</h1>
+        <h3 >⭐{movie.vote_average.toFixed(1)}</h3>
+        <p>{movie.overview}</p>
+        <a href={movie.homepage} target={"_blank"} >HomePage &rarr;</a>
       </div>
     </div>
   );

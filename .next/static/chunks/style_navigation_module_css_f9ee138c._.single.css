@@ -1,0 +1,11 @@
+/* [project]/style/navigation.module.css [app-client] (css) */
+nav {
+  background-color: #fda9a9;
+  padding: 50px 100px;
+}
+
+nav ul {
+  display: flex;
+}
+
+/*# sourceMappingURL=style_navigation_module_css_f9ee138c._.single.css.map*/
