@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/kjh58/%EB%AC%B8%EC%84%9C/GitHub/next_lab/styles/movie.module.css"],"sourcesContent":[".movie {\r\n    display: grid;\r\n    grid-template-rows: 1fr auto;\r\n    gap: 20px;\r\n    cursor: pointer;\r\n    place-items: center;\r\n}\r\n\r\n.movie img {\r\n    max-width: 100%;\r\n    min-width: 100%;\r\n    border-radius: 10px;\r\n    transition: opacity 0.3s ease-in-out\r\n}\r\n\r\n.movie img {\r\n    opacity: 0.7;\r\n\r\n}\r\n\r\n.movie img:hover {\r\n    opacity: 1;\r\n}\r\n\r\n.movie a {\r\n    text-align: center;\r\n}"],"names":[],"mappings":"AAAA;;;;;;;;AAQA;;;;;;;;AAYA;;;;AAIA","debugId":null}},
-    {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/kjh58/%EB%AC%B8%EC%84%9C/GitHub/next_lab/styles/home.module.css"],"sourcesContent":[".container{\r\n    display: grid;\r\n    grid-template-columns: repeat(5, 1fr);\r\n    gap: 25px;\r\n    max-width: 90%;\r\n    width: 100%;\r\n    margin: 0 auto;\r\n}"],"names":[],"mappings":"AAAA","debugId":null}}]
-}

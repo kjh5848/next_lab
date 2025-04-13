@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/kjh58/%EB%AC%B8%EC%84%9C/GitHub/next_lab/app/%28home%29/loading.tsx"],"sourcesContent":["export default function Loading()   {\r\n    return <h1>loding...</h1>\r\n}"],"names":[],"mappings":";;;;;AAAe,SAAS;IACpB,qBAAO,8OAAC;kBAAG;;;;;;AACf","debugId":null}}]
-}
