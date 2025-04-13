@@ -1,5 +1,8 @@
+// This is a server component file
 import { API_URL } from "../app/(home)/page";
 import styles from "../styles/movie-videos.module.css";
+import { Suspense } from "react";
+import { LazyYoutubeEmbed } from "./LazyYoutubeEmbed"; // Import from separate file
 
 // 비디오 타입 정의
 interface Video {
@@ -18,9 +21,20 @@ interface VideoGroups {
   [key: string]: Video[];
 }
 
+// 비디오 타입 한글 매핑
+const videoTypeKorean = {
+  "Trailer": "예고편",
+  "Teaser": "티저",
+  "Clip": "클립",
+  "Featurette": "피처렛",
+  "Behind the Scenes": "비하인드 장면",
+  "Other": "기타"
+};
+
 async function getVideos(id: string) {
   try {
-    const res = await fetch(`${API_URL}/${id}/videos`);
+    // Use force-cache to improve performance
+    const res = await fetch(`${API_URL}/${id}/videos`, { cache: "force-cache" });
     if (!res.ok) {
       throw new Error(`Failed to fetch videos: ${res.status}`);
     }
@@ -31,6 +45,7 @@ async function getVideos(id: string) {
   }
 }
 
+// Server component
 export default async function MovieVideos({ id }: { id: string }) {
   const videos = await getVideos(id);
 
@@ -76,29 +91,29 @@ export default async function MovieVideos({ id }: { id: string }) {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Videos</h2>
+      <h2 className={styles.title}>영상</h2>
 
       {/* 비디오 타입별로 섹션 생성 */}
       {displayOrder.map((type) => {
         const videosOfType = groupedVideos[type];
         if (!videosOfType || videosOfType.length === 0) return null;
 
+        const typeKorean = videoTypeKorean[type] || type;
+
         return (
           <div key={type} className={styles.videoSection}>
-            <h3 className={styles.sectionTitle}>{type}s</h3>
+            <h3 className={styles.sectionTitle}>{typeKorean}</h3>
 
             {/* 첫 번째 비디오는 크게 표시 (주로 최신 예고편) */}
             {type === "Trailer" && videosOfType.sort(sortByDate)[0] && (
               <div className={styles.featuredVideo}>
-                <iframe
-                  width="100%"
-                  height="500"
-                  src={`https://www.youtube.com/embed/${videosOfType[0].key}`}
-                  title={videosOfType[0].name}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                <Suspense fallback={<div style={{ width: '100%', height: '0', paddingBottom: '56.25%', backgroundColor: '#f0f0f0', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}><span style={{ position: 'absolute' }}>예고편 로딩중...</span></div>}>
+                  <LazyYoutubeEmbed 
+                    videoKey={videosOfType[0].key} 
+                    title={videosOfType[0].name} 
+                    height="500px"
+                  />
+                </Suspense>
                 <h4 className={styles.videoTitle}>{videosOfType[0].name}</h4>
                 <p className={styles.publishDate}>
                   {new Date(videosOfType[0].published_at).toLocaleDateString(
@@ -121,17 +136,12 @@ export default async function MovieVideos({ id }: { id: string }) {
                 .slice(type === "Trailer" ? 1 : 0)
                 .map((video) => (
                   <div key={video.id} className={styles.videoCard}>
-                    <div className={styles.videoWrapper}>
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        src={`https://www.youtube.com/embed/${video.key}`}
-                        title={video.name}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
+                    <Suspense fallback={<div style={{ width: '100%', paddingBottom: '56.25%', backgroundColor: '#f0f0f0', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}><span style={{ position: 'absolute' }}>영상 로딩중...</span></div>}>
+                      <LazyYoutubeEmbed 
+                        videoKey={video.key} 
+                        title={video.name} 
+                      />
+                    </Suspense>
                     <h4 className={styles.videoTitle}>{video.name}</h4>
                     <p className={styles.publishDate}>
                       {new Date(video.published_at).toLocaleDateString(

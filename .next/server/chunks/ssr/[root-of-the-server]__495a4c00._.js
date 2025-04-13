@@ -259,7 +259,8 @@ __turbopack_context__.v({
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>MovieInfo)
+    "default": (()=>MovieInfo),
+    "getMovie": (()=>getMovie)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f28$home$292f$page$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/(home)/page.tsx [app-rsc] (ecmascript)");
@@ -564,11 +565,50 @@ __turbopack_context__.v({
   "videoWrapper": "movie-videos-module__-fEI0G__videoWrapper",
 });
 }}),
+"[project]/components/LazyYoutubeEmbed.tsx (client reference/proxy) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "LazyYoutubeEmbed": (()=>LazyYoutubeEmbed)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server-edge.js [app-rsc] (ecmascript)");
+;
+const LazyYoutubeEmbed = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call LazyYoutubeEmbed() from the server but LazyYoutubeEmbed is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/LazyYoutubeEmbed.tsx <module evaluation>", "LazyYoutubeEmbed");
+}}),
+"[project]/components/LazyYoutubeEmbed.tsx (client reference/proxy)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "LazyYoutubeEmbed": (()=>LazyYoutubeEmbed)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server-edge.js [app-rsc] (ecmascript)");
+;
+const LazyYoutubeEmbed = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2d$edge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call LazyYoutubeEmbed() from the server but LazyYoutubeEmbed is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/components/LazyYoutubeEmbed.tsx", "LazyYoutubeEmbed");
+}}),
+"[project]/components/LazyYoutubeEmbed.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$LazyYoutubeEmbed$2e$tsx__$28$client__reference$2f$proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/components/LazyYoutubeEmbed.tsx (client reference/proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$LazyYoutubeEmbed$2e$tsx__$28$client__reference$2f$proxy$29$__ = __turbopack_context__.i("[project]/components/LazyYoutubeEmbed.tsx (client reference/proxy)");
+;
+__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$LazyYoutubeEmbed$2e$tsx__$28$client__reference$2f$proxy$29$__);
+}}),
 "[project]/components/movie-video.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname } = __turbopack_context__;
 {
+// This is a server component file
 __turbopack_context__.s({
     "default": (()=>MovieVideos)
 });
@@ -576,10 +616,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f28$home$292f$page$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/(home)/page.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/styles/movie-videos.module.css [app-rsc] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$LazyYoutubeEmbed$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/LazyYoutubeEmbed.tsx [app-rsc] (ecmascript)"); // Import from separate file
 ;
 ;
 ;
 ;
+;
+// 비디오 타입 한글 매핑
+const videoTypeKorean = {
+    "Trailer": "예고편",
+    "Teaser": "티저",
+    "Clip": "클립",
+    "Featurette": "피처렛",
+    "Behind the Scenes": "비하인드 장면",
+    "Other": "기타"
+};
 async function getVideos(id) {
     try {
         // Use force-cache to improve performance
@@ -595,86 +646,6 @@ async function getVideos(id) {
         return [];
     }
 }
-// Create a separate client component for lazy loading YouTube iframes
-function LazyYoutubeEmbed({ videoKey, title, height = "100%" }) {
-    const [isLoaded, setIsLoaded] = React.useState(false);
-    const thumbnailUrl = `https://img.youtube.com/vi/${videoKey}/maxresdefault.jpg`;
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].videoWrapper,
-        style: {
-            position: 'relative'
-        },
-        children: [
-            !isLoaded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                onClick: ()=>setIsLoaded(true),
-                style: {
-                    backgroundImage: `url(${thumbnailUrl})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    width: '100%',
-                    height,
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    cursor: 'pointer',
-                    position: 'absolute',
-                    top: 0,
-                    left: 0
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    style: {
-                        width: '70px',
-                        height: '50px',
-                        backgroundColor: 'red',
-                        borderRadius: '10px',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center'
-                    },
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        style: {
-                            width: 0,
-                            height: 0,
-                            borderTop: '10px solid transparent',
-                            borderBottom: '10px solid transparent',
-                            borderLeft: '20px solid white',
-                            marginLeft: '5px'
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/components/movie-video.tsx",
-                        lineNumber: 74,
-                        columnNumber: 13
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/components/movie-video.tsx",
-                    lineNumber: 63,
-                    columnNumber: 11
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/components/movie-video.tsx",
-                lineNumber: 46,
-                columnNumber: 9
-            }, this),
-            isLoaded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
-                width: "100%",
-                height: height,
-                src: `https://www.youtube.com/embed/${videoKey}`,
-                title: title,
-                frameBorder: "0",
-                allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
-                allowFullScreen: true
-            }, void 0, false, {
-                fileName: "[project]/components/movie-video.tsx",
-                lineNumber: 80,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/movie-video.tsx",
-        lineNumber: 44,
-        columnNumber: 5
-    }, this);
-}
 async function MovieVideos({ id }) {
     const videos = await getVideos(id);
     // 비디오가 없는 경우 처리
@@ -687,7 +658,7 @@ async function MovieVideos({ id }) {
                     children: "Videos"
                 }, void 0, false, {
                     fileName: "[project]/components/movie-video.tsx",
-                    lineNumber: 102,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -695,13 +666,13 @@ async function MovieVideos({ id }) {
                     children: "No videos available for this movie."
                 }, void 0, false, {
                     fileName: "[project]/components/movie-video.tsx",
-                    lineNumber: 103,
+                    lineNumber: 57,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/movie-video.tsx",
-            lineNumber: 101,
+            lineNumber: 55,
             columnNumber: 7
         }, this);
     }
@@ -732,27 +703,25 @@ async function MovieVideos({ id }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].title,
-                children: "Videos"
+                children: "영상"
             }, void 0, false, {
                 fileName: "[project]/components/movie-video.tsx",
-                lineNumber: 140,
+                lineNumber: 94,
                 columnNumber: 7
             }, this),
             displayOrder.map((type)=>{
                 const videosOfType = groupedVideos[type];
                 if (!videosOfType || videosOfType.length === 0) return null;
+                const typeKorean = videoTypeKorean[type] || type;
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].videoSection,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$styles$2f$movie$2d$videos$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].sectionTitle,
-                            children: [
-                                type,
-                                "s"
-                            ]
-                        }, void 0, true, {
+                            children: typeKorean
+                        }, void 0, false, {
                             fileName: "[project]/components/movie-video.tsx",
-                            lineNumber: 149,
+                            lineNumber: 105,
                             columnNumber: 13
                         }, this),
                         type === "Trailer" && videosOfType.sort(sortByDate)[0] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -762,30 +731,41 @@ async function MovieVideos({ id }) {
                                     fallback: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         style: {
                                             width: '100%',
-                                            height: '500px',
+                                            height: '0',
+                                            paddingBottom: '56.25%',
                                             backgroundColor: '#f0f0f0',
                                             display: 'flex',
                                             justifyContent: 'center',
-                                            alignItems: 'center'
+                                            alignItems: 'center',
+                                            position: 'relative'
                                         },
-                                        children: "Loading trailer..."
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            style: {
+                                                position: 'absolute'
+                                            },
+                                            children: "예고편 로딩중..."
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/movie-video.tsx",
+                                            lineNumber: 110,
+                                            columnNumber: 221
+                                        }, void 0)
                                     }, void 0, false, {
                                         fileName: "[project]/components/movie-video.tsx",
-                                        lineNumber: 154,
+                                        lineNumber: 110,
                                         columnNumber: 37
                                     }, void 0),
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(LazyYoutubeEmbed, {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$LazyYoutubeEmbed$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["LazyYoutubeEmbed"], {
                                         videoKey: videosOfType[0].key,
                                         title: videosOfType[0].name,
                                         height: "500px"
                                     }, void 0, false, {
                                         fileName: "[project]/components/movie-video.tsx",
-                                        lineNumber: 155,
+                                        lineNumber: 111,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/movie-video.tsx",
-                                    lineNumber: 154,
+                                    lineNumber: 110,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -793,7 +773,7 @@ async function MovieVideos({ id }) {
                                     children: videosOfType[0].name
                                 }, void 0, false, {
                                     fileName: "[project]/components/movie-video.tsx",
-                                    lineNumber: 161,
+                                    lineNumber: 117,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -805,13 +785,13 @@ async function MovieVideos({ id }) {
                                     })
                                 }, void 0, false, {
                                     fileName: "[project]/components/movie-video.tsx",
-                                    lineNumber: 162,
+                                    lineNumber: 118,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/movie-video.tsx",
-                            lineNumber: 153,
+                            lineNumber: 109,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -824,29 +804,39 @@ async function MovieVideos({ id }) {
                                             fallback: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 style: {
                                                     width: '100%',
-                                                    height: '100%',
+                                                    paddingBottom: '56.25%',
                                                     backgroundColor: '#f0f0f0',
                                                     display: 'flex',
                                                     justifyContent: 'center',
-                                                    alignItems: 'center'
+                                                    alignItems: 'center',
+                                                    position: 'relative'
                                                 },
-                                                children: "Loading video..."
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    style: {
+                                                        position: 'absolute'
+                                                    },
+                                                    children: "영상 로딩중..."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/movie-video.tsx",
+                                                    lineNumber: 139,
+                                                    columnNumber: 212
+                                                }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/movie-video.tsx",
-                                                lineNumber: 183,
+                                                lineNumber: 139,
                                                 columnNumber: 41
                                             }, void 0),
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(LazyYoutubeEmbed, {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$LazyYoutubeEmbed$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["LazyYoutubeEmbed"], {
                                                 videoKey: video.key,
                                                 title: video.name
                                             }, void 0, false, {
                                                 fileName: "[project]/components/movie-video.tsx",
-                                                lineNumber: 184,
+                                                lineNumber: 140,
                                                 columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/movie-video.tsx",
-                                            lineNumber: 183,
+                                            lineNumber: 139,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -854,7 +844,7 @@ async function MovieVideos({ id }) {
                                             children: video.name
                                         }, void 0, false, {
                                             fileName: "[project]/components/movie-video.tsx",
-                                            lineNumber: 189,
+                                            lineNumber: 145,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -866,31 +856,31 @@ async function MovieVideos({ id }) {
                                             })
                                         }, void 0, false, {
                                             fileName: "[project]/components/movie-video.tsx",
-                                            lineNumber: 190,
+                                            lineNumber: 146,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, video.id, true, {
                                     fileName: "[project]/components/movie-video.tsx",
-                                    lineNumber: 182,
+                                    lineNumber: 138,
                                     columnNumber: 19
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/movie-video.tsx",
-                            lineNumber: 176,
+                            lineNumber: 132,
                             columnNumber: 13
                         }, this)
                     ]
                 }, type, true, {
                     fileName: "[project]/components/movie-video.tsx",
-                    lineNumber: 148,
+                    lineNumber: 104,
                     columnNumber: 11
                 }, this);
             })
         ]
     }, void 0, true, {
         fileName: "[project]/components/movie-video.tsx",
-        lineNumber: 139,
+        lineNumber: 93,
         columnNumber: 5
     }, this);
 }
@@ -901,7 +891,8 @@ async function MovieVideos({ id }) {
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>Page)
+    "default": (()=>Page),
+    "generateMetadata": (()=>generateMetadata)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react.js [app-rsc] (ecmascript)");
@@ -911,8 +902,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$movie$2d$video
 ;
 ;
 ;
+async function generateMetadata({ params }) {
+    const { id } = await params;
+    const movie = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$movie$2d$info$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getMovie"])(id);
+    return {
+        title: movie.title
+    };
+}
 async function Page({ params }) {
-    const { id } = await params; //next 15버전 부터는 await를 써줘야 함.
+    const { id } = await params;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "container mx-auto p-4",
         children: [
@@ -922,19 +920,19 @@ async function Page({ params }) {
                     children: "Loading movie info..."
                 }, void 0, false, {
                     fileName: "[project]/app/(movies)/movies/[id]/page.tsx",
-                    lineNumber: 9,
+                    lineNumber: 26,
                     columnNumber: 27
                 }, void 0),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$movie$2d$info$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     id: id
                 }, void 0, false, {
                     fileName: "[project]/app/(movies)/movies/[id]/page.tsx",
-                    lineNumber: 10,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/(movies)/movies/[id]/page.tsx",
-                lineNumber: 9,
+                lineNumber: 26,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Suspense"], {
@@ -943,25 +941,25 @@ async function Page({ params }) {
                     children: "Loading movie videos..."
                 }, void 0, false, {
                     fileName: "[project]/app/(movies)/movies/[id]/page.tsx",
-                    lineNumber: 12,
+                    lineNumber: 29,
                     columnNumber: 27
                 }, void 0),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$movie$2d$video$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     id: id
                 }, void 0, false, {
                     fileName: "[project]/app/(movies)/movies/[id]/page.tsx",
-                    lineNumber: 13,
+                    lineNumber: 30,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/(movies)/movies/[id]/page.tsx",
-                lineNumber: 12,
+                lineNumber: 29,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/(movies)/movies/[id]/page.tsx",
-        lineNumber: 8,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }
@@ -975,4 +973,4 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/app/(movies)/movies/[
 
 };
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__717d8860._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__495a4c00._.js.map
