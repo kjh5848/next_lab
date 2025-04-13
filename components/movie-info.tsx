@@ -1,7 +1,7 @@
 import axios from "axios";
-import { API_URL } from "../app/(home)/page";
 import { unstable_cache } from "next/cache";
 import styles from "../styles/movie-info.module.css"
+import { API_URL } from "../lib/constants";
 
 export const getMovie = async (id: string) => {
   const res = await fetch(`${API_URL}/${id}`, { cache: "force-cache" });
