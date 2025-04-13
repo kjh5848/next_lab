@@ -1,15 +1,14 @@
 import { Suspense } from "react";
 import MovieInfo, { getMovie } from "../../../../components/movie-info";
 import MovieVideos from "../../../../components/movie-video";
+import { Metadata } from "next";
 
-interface IParams {
-  params: {
-    id: string;
-  };
+interface PageProps  {
+  params: Promise<{ id: string }> ;
 }
 
 
-export async function generateMetadata({ params }: IParams) {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
   const movie = await getMovie(id)
   return{
@@ -19,7 +18,7 @@ export async function generateMetadata({ params }: IParams) {
 }
 
 
-export default async function Page({ params }: IParams) {
+export default async function Page({ params }: PageProps ) {
   const { id } = await params;
   return (
     <div className="container mx-auto p-4">

@@ -1,8 +1,8 @@
 // This is a server component file
-import { API_URL } from "../app/(home)/page";
 import styles from "../styles/movie-videos.module.css";
 import { Suspense } from "react";
 import { LazyYoutubeEmbed } from "./LazyYoutubeEmbed"; // Import from separate file
+import { API_URL } from "../lib/constants";
 
 // 비디오 타입 정의
 interface Video {
